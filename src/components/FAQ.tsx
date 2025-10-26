@@ -6,12 +6,15 @@ const FAQ = () => {
     <div className={FAQCSS.container}>
       <Accordion title="What Is This?">
         <p>
-          This user-friendly website allows you to generate valid cryptocurrency
-          wallets using an image (or any other file) combined with an optional
-          password, rather than the traditional random number generator.
-          Essentially, the wallet seed (24 mnemonic words) is generated from the
-          hash of the file and the password.
+          This website allows you to generate valid cryptocurrency wallets
+          completely offline, client side, using an image (or any other file)
+          combined with an optional password, rather than the traditional random
+          number generator.
         </p>
+        <img
+          src="https://github.com/DevTheFool/file-wallet/assets/110111354/a90eede3-f111-460c-86af-dbe9fbbbb385"
+          alt="File wallet demonstration"
+        />
       </Accordion>
       <Accordion title="Why Use It?">
         <p>There are several advantages in using a file and a password:</p>
@@ -123,22 +126,24 @@ const FAQ = () => {
         </ol>
       </Accordion>
       <Accordion title="How to Run It Offline?">
+        <p>Just disconnect the internet once the website is loaded :p</p>
         <p>
-          It couldn't be any simpler. Just go to{' '}
+          Or better, download the stand-alone "file-wallet.html" from the latest{' '}
           <a
-            href="https://github.com/AmphibianDev/file-wallet/releases"
+            href="https://github.com/DevTheFool/file-wallet/releases"
             target="_blank"
             rel="noopener external"
             aria-label="GitHub latest release"
           >
             releases
-          </a>{' '}
-          and download the file-wallet.html from the latest release. Now, you
-          only need to open it with any browser you like (double click it).
+          </a>
+          , and open it with any browser (double click it).
         </p>
         <p>
-          I recommend storing the exact version you used on your PC for
-          safekeeping.
+          I strongly recommend storing and using the "file-wallet.html" offline,
+          to always have a copy of the website with the exact version you used,
+          in the unlikely case the website is taken down in the future or the
+          domain is taken over or the wallet generation algorithm changed.
         </p>
       </Accordion>
       <Accordion title="Is The Code Open-Source?">
@@ -147,7 +152,7 @@ const FAQ = () => {
           technically inclined, or just curious, you're welcome to check out the
           source code on{' '}
           <a
-            href="https://github.com/AmphibianDev/file-wallet"
+            href="https://github.com/DevTheFool/file-wallet"
             target="_blank"
             rel="noreferrer"
           >
@@ -164,7 +169,7 @@ const FAQ = () => {
           any loss of cryptocurrency or other damages. Ensure file integrity and
           only use it on trusted devices. Review the open-source code on{' '}
           <a
-            href="https://github.com/AmphibianDev/file-wallet"
+            href="https://github.com/DevTheFool/file-wallet"
             target="_blank"
             rel="noreferrer"
           >

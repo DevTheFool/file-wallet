@@ -22,10 +22,20 @@ export const WarningAside = () => {
           <RiInformationLine />
         </div>
         <p tabIndex={0} aria-live="polite" className={WarningAsideCSS.text}>
-          Use it at your own risk. <span>Checkout</span>
+          Use it{' '}
+          <Link
+            to="/faq#how_to_run_it_offline"
+            aria-label="how to run it offline"
+          >
+            offline
+          </Link>
+          {', '}
+          keep a copy and carefully store the img used. <span>
+            Checkout
+          </span>{' '}
           <Link to="/faq" aria-label="Frequent Ask Questions">
             <RiQuestionnaireFill />
-          </Link>
+          </Link>{' '}
           for more info.
         </p>
       </div>
