@@ -41,13 +41,13 @@ const Footer = () => {
         <p>
           App Version:{' '}
           <a
-            href="https://github.com/AmphibianDev/file-wallet/releases"
+            href="https://github.com/DevTheFool/file-wallet/releases"
             target="_blank"
             rel="noopener external"
             className={FooterCSS.clickText}
             aria-label="GitHub latest release"
           >
-            v0.6.0-alpha
+            v0.6.1-alpha
           </a>
         </p>
       </div>
@@ -61,7 +61,7 @@ const Footer = () => {
           <RiTwitterXLine />
         </a>
         <a
-          href="https://github.com/AmphibianDev/file-wallet"
+          href="https://github.com/DevTheFool/file-wallet"
           target="_blank"
           rel="noreferrer"
           aria-label="Github Repository"
