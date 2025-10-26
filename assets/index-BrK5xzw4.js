@@ -9729,12 +9729,12 @@ const Footer = () => {
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "a",
           {
-            href: "https://github.com/AmphibianDev/file-wallet/releases",
+            href: "https://github.com/DevTheFool/file-wallet/releases",
             target: "_blank",
             rel: "noopener external",
             className: FooterCSS.clickText,
             "aria-label": "GitHub latest release",
-            children: "v0.6.0-alpha"
+            children: "v0.6.1-alpha"
           }
         )
       ] })
@@ -9753,7 +9753,7 @@ const Footer = () => {
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "a",
         {
-          href: "https://github.com/AmphibianDev/file-wallet",
+          href: "https://github.com/DevTheFool/file-wallet",
           target: "_blank",
           rel: "noreferrer",
           "aria-label": "Github Repository",
@@ -12257,10 +12257,10 @@ const OutputSection = ({ className }) => {
     /* @__PURE__ */ jsxRuntimeExports.jsx("div", { tabIndex: -1, className: OutputSectionCSS.container, children: renderLogic() })
   ] });
 };
-const container$6 = "_container_1acw6_1";
-const leftSide = "_leftSide_1acw6_11";
-const iconContainer = "_iconContainer_1acw6_16";
-const text = "_text_1acw6_45";
+const container$6 = "_container_3mwnv_1";
+const leftSide = "_leftSide_3mwnv_11";
+const iconContainer = "_iconContainer_3mwnv_16";
+const text = "_text_3mwnv_45";
 const WarningAsideCSS = {
   container: container$6,
   leftSide,
@@ -12279,9 +12279,22 @@ const WarningAside = () => {
     /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: WarningAsideCSS.leftSide, children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: WarningAsideCSS.iconContainer, children: /* @__PURE__ */ jsxRuntimeExports.jsx(RiInformationLine, {}) }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { tabIndex: 0, "aria-live": "polite", className: WarningAsideCSS.text, children: [
-        "Use it at your own risk. ",
+        "Use it",
+        " ",
+        /* @__PURE__ */ jsxRuntimeExports.jsx(
+          Link,
+          {
+            to: "/faq#how_to_run_it_offline",
+            "aria-label": "how to run it offline",
+            children: "offline"
+          }
+        ),
+        ", ",
+        "keep a copy and carefully store the img used. ",
         /* @__PURE__ */ jsxRuntimeExports.jsx("span", { children: "Checkout" }),
+        " ",
         /* @__PURE__ */ jsxRuntimeExports.jsx(Link, { to: "/faq", "aria-label": "Frequent Ask Questions", children: /* @__PURE__ */ jsxRuntimeExports.jsx(RiQuestionnaireFill, {}) }),
+        " ",
         "for more info."
       ] })
     ] }),
@@ -12404,7 +12417,16 @@ const FAQCSS = {
 };
 const FAQ = () => {
   return /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: FAQCSS.container, children: [
-    /* @__PURE__ */ jsxRuntimeExports.jsx(Accordion, { title: "What Is This?", children: /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "This user-friendly website allows you to generate valid cryptocurrency wallets using an image (or any other file) combined with an optional password, rather than the traditional random number generator. Essentially, the wallet seed (24 mnemonic words) is generated from the hash of the file and the password." }) }),
+    /* @__PURE__ */ jsxRuntimeExports.jsxs(Accordion, { title: "What Is This?", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "This website allows you to generate valid cryptocurrency wallets completely offline, client side, using an image (or any other file) combined with an optional password, rather than the traditional random number generator." }),
+      /* @__PURE__ */ jsxRuntimeExports.jsx(
+        "img",
+        {
+          src: "https://github.com/DevTheFool/file-wallet/assets/110111354/a90eede3-f111-460c-86af-dbe9fbbbb385",
+          alt: "File wallet demonstration"
+        }
+      )
+    ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs(Accordion, { title: "Why Use It?", children: [
       /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "There are several advantages in using a file and a password:" }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("ol", { children: [
@@ -12490,23 +12512,23 @@ const FAQ = () => {
       ] }) })
     ] }) }),
     /* @__PURE__ */ jsxRuntimeExports.jsxs(Accordion, { title: "How to Run It Offline?", children: [
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "Just disconnect the internet once the website is loaded :p" }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
-        "It couldn't be any simpler. Just go to",
+        'Or better, download the stand-alone "file-wallet.html" from the latest',
         " ",
         /* @__PURE__ */ jsxRuntimeExports.jsx(
           "a",
           {
-            href: "https://github.com/AmphibianDev/file-wallet/releases",
+            href: "https://github.com/DevTheFool/file-wallet/releases",
             target: "_blank",
             rel: "noopener external",
             "aria-label": "GitHub latest release",
             children: "releases"
           }
         ),
-        " ",
-        "and download the file-wallet.html from the latest release. Now, you only need to open it with any browser you like (double click it)."
+        ", and open it with any browser (double click it)."
       ] }),
-      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: "I recommend storing the exact version you used on your PC for safekeeping." })
+      /* @__PURE__ */ jsxRuntimeExports.jsx("p", { children: 'I strongly recommend storing and using the "file-wallet.html" offline, to always have a copy of the website with the exact version you used, in the unlikely case the website is taken down in the future or the domain is taken over or the wallet generation algorithm changed.' })
     ] }),
     /* @__PURE__ */ jsxRuntimeExports.jsx(Accordion, { title: "Is The Code Open-Source?", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("p", { children: [
       "Yes. Transparency and the community are essential. If you're technically inclined, or just curious, you're welcome to check out the source code on",
@@ -12514,7 +12536,7 @@ const FAQ = () => {
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "a",
         {
-          href: "https://github.com/AmphibianDev/file-wallet",
+          href: "https://github.com/DevTheFool/file-wallet",
           target: "_blank",
           rel: "noreferrer",
           children: "GitHub"
@@ -12529,7 +12551,7 @@ const FAQ = () => {
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "a",
         {
-          href: "https://github.com/AmphibianDev/file-wallet",
+          href: "https://github.com/DevTheFool/file-wallet",
           target: "_blank",
           rel: "noreferrer",
           children: "GitHub"

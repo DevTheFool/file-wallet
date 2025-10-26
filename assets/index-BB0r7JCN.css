@@ -1341,7 +1341,7 @@ a {
     transform: rotate(360deg);
   }
 }
-._container_1acw6_1 {
+._container_3mwnv_1 {
   border: 1px solid var(--color-border);
   border-radius: 6px;
 
@@ -1351,12 +1351,12 @@ a {
   overflow: hidden;
 }
 
-._leftSide_1acw6_11 {
+._leftSide_3mwnv_11 {
   display: flex;
   align-items: center;
 }
 
-._iconContainer_1acw6_16 {
+._iconContainer_3mwnv_16 {
   display: flex;
   align-self: stretch;
   align-items: center;
@@ -1366,7 +1366,7 @@ a {
   position: relative;
 }
 
-._iconContainer_1acw6_16::before {
+._iconContainer_3mwnv_16::before {
     content: '';
     position: absolute;
     transform: skewX(25deg);
@@ -1379,43 +1379,37 @@ a {
     right: -0.2rem;
   }
 
-._iconContainer_1acw6_16 svg {
+._iconContainer_3mwnv_16 svg {
     width: 3.5rem;
     height: 1.6rem;
     fill: var(--color-info-light);
     z-index: 1;
   }
 
-._text_1acw6_45 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-
+._text_3mwnv_45 {
   text-align: center;
   font-size: var(--a300);
   line-height: 1.2rem;
-  -moz-column-gap: 0.4rem;
-       column-gap: 0.4rem;
 
   padding: 0.6rem 1rem;
   padding-right: 0rem;
 }
 
-._text_1acw6_45 a {
-    display: grid;
+._text_3mwnv_45 a {
+    display: inline-grid;
     align-items: center;
     justify-items: center;
     place-items: center;
+    vertical-align: middle;
   }
 
-._text_1acw6_45 a svg {
+._text_3mwnv_45 a svg {
       width: 1.4rem;
       height: 1.4rem;
       fill: var(--color-info-light);
     }
 
-._text_1acw6_45 a svg:hover {
+._text_3mwnv_45 a svg:hover {
         fill: var(--color-primary-bright);
       }
 :root {
