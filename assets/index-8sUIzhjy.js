@@ -9743,7 +9743,7 @@ const Footer = () => {
       /* @__PURE__ */ jsxRuntimeExports.jsx(
         "a",
         {
-          href: "https://x.com/AmphibianDev",
+          href: "https://x.com/devthefool",
           target: "_blank",
           rel: "noopener external",
           "aria-label": "X Social Page",
